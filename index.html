@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+
+    <head>
+        <meta charset="utf-8">
+        <title> Log Page </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Boris Rose">
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="css/log.css">
+      
+
+    </head>
+
+    <body>
+
+
+        <div id="root" aria-label="conteneur racine">
+
+
+            <h1 class="log-header">Inscription</h1>
+           
+
+            <form id="log-form-container">
+    
+                <div class="log-form-container__input-container" aria-label="log form input container">
+                    <label for="email-one">Email*</label>
+                    <input type="email" 
+
+                    class="log-former-container__input-container__input" 
+
+                    id="email-one" 
+
+                    placeholder="ex: boris@gmail.com"
+                    
+                    pattern="[a-z.]{2,10}[@]{1}[a-z]{3,10}[.]{1}[a-z]{3,6}" 
+
+                    required>
+                </div>
+
+                
+                <div class="log-form-container__input-container" aria-label="log form input container">
+                    <label for="password">Mot de passe*</label>
+                    <input 
+                    type="password" 
+                    class="log-former-container__input-container__input" 
+                    id="password" 
+                    title="8 caractères minimum" 
+                    placeholder="*******"
+                    pattern="[a-z.!éèù?]{8,}" 
+                    required>
+                </div>
+                <div class="log-form-container__input-container" aria-label="log form input container">
+                    <label for="age">Votre âge</label>
+                    <input  
+                    class="log-former-container__input-container__input" 
+                    id="age"
+                    title="2 chiffres" 
+                    placeholder="Entrez votre âge"
+                    pattern="\d{2,2}"
+                    required>
+                </div>
+
+                <div class="log-form-container__input-container" aria-label="log form input container">
+                    <label for="birthdate">Votre date de naissance</label>
+                    <input type="date" class="log-former-container__input-container__input" id="birthdate" required>
+                </div>
+                
+                <div class="log-form-container__input-container" aria-label="log form input container">
+                    <label for="why-signup">Pourquoi vous inscrire</label>
+                    <textarea 
+                    required
+                    cols="3"
+                    rows="10"
+                    placeholder="Ecrivez la raison de votre inscription"
+                    id="why-signup">
+                    </textarea>
+                </div>
+
+
+
+                <div class="log-form-container__select-container" aria-label="log form select container">
+
+                    <label for="log-form__gender-select__label"> Choisir un genre </label>
+                    <select id="log-form__gender-select">
+                        <option value="">---Choisir---</option>
+                        <option value="male">Masculin</option>
+                        <option value="female">Féminin</option>
+                        <option value="no-answer">Non-renseigné</option>
+                        <option value="non-binary">Non-binaire</option>
+
+                    </select>
+
+
+                </div>
+
+  
+                <fieldset class="log-form-container__fieldset">
+                    <legend>Veuiller cocher les conditions d'utilisation</legend>
+                
+                    <div class="log-form-container__input-container--checkbox-type">
+                      <input type="checkbox" id="legals" name="legals" checked>
+                      <label for="legals">J'ai lu et approuvé les mentions légales </label>
+                    </div>
+                
+                    <div class="log-form-container__input-container--checkbox-type">
+                      <input type="checkbox" id="newsletter" name="newsletter" required>
+                      <label for="newsletter"> Je ne souhaite pas recevoir de newletter</label>
+                    </div>
+                </fieldset>
+    
+                
+                <button id="log-form-container__submit-button" type="submit">
+                    S'inscrire
+                </button>
+            </form>
+
+
+
+        </div>
+       
+
+
+
+    </body>
+
+
+</html>
